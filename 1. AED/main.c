@@ -1,21 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-	int num1, num2, div, rest;
-	printf("Digite os dois números separados por espaço: ");
-	scanf("%d%d", &num1, &num2);
-    divResto(num1, num2, &div, &rest);
-
-    printf("Endereco de i: %p\nEndereco de j: %p\n", &i, &j);
-    pi = &i;
-    pj = &j;
-    printf("Conteudo pi: %p\nConteudo pj: %p\n", pi, pj);
-    printf("Apontado por pi: %d\nApontado por pj: %d\n", *pi, *pj);
-    return 0;
+int soma(int a, int b){
+    int x;
+    x = a + b;
+    return x;
 }
 
-void divResto(int div1, int div2, int div, int *rest){
-
+int main()
+{
+	int num1, num2, result;
+    printf("Digite o primeiro número: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo número: ");
+    scanf("%d", &num2);
+    result = soma(num1, num2);
+    printf("O resultado é: %d\n", result);
 }
