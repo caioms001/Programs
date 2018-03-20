@@ -15,5 +15,6 @@ int main()
     printf("Digite o segundo número: ");
     scanf("%d", &num2);
     result = soma(num1, num2);
+    printf("olá");
     printf("O resultado é: %d\n", result);
 }
