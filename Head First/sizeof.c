@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void teste(char msg []){
-	printf("%lu\n", sizeof(msg));
-}
-
 int main(){
-	char testeS[] = "He";
-	teste(testeS);
+	char varInt = 'C';
+	 varInt2 = 'C';
+	for (int i = 0; i < 300; ++i)
+	{
+		/* code */
+	}
+
+	//char testeS[] = "He";
+	printf("Tamanho: %p\n", &varInt);
+	printf("Tamanho: %p\n", &varInt2);
 	return 0;
 }
